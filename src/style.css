@@ -1,0 +1,182 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@font-face {
+    font-family: Pp Neue Machina;
+    src: url(/fonts/PPNeueMachina-Light.otf);
+    
+}
+@font-face {
+    font-family: Satoshi Variable;
+    src: url(/fonts/659dbdfd5a080be8d3483173_Satoshi-Variable.ttf);
+}
+
+
+*{
+margin: 0;
+padding: 0;
+box-sizing: border-box;
+}
+html, body{
+width: 100%;
+height: 100%;
+}
+
+.videodiv{
+    clip-path: circle(var(--clip) at 50% 50%);
+}
+
+
+
+body[theme='black']{
+    background: rgb(0, 0, 0);
+    transition: background .8s ease;
+}
+body[theme='black'] .section{
+    color: rgb(255, 255, 255 );
+    transition: color .8s ease;
+}
+body[theme='white']{
+    background: #ffffff;
+    transition: background .8s ease;
+}
+body[theme='white'] .section{
+    color: black;
+    transition: color .8s ease;
+}
+body[theme='cyan']{
+    background: rgb(174, 222, 224);
+    transition: background .8s ease;
+    /* will-change: background; */
+}
+body[theme='cyan'] .section{
+    color: rgb(0, 0, 0);
+    transition: color .8s ease;
+    /* will-change: color; */
+}
+body[theme='salmon']{
+    background: #ef9d71;
+    transition: background .8s ease;
+}
+body[theme='salmon'] .section{
+    color: #000;
+    transition: color .8s ease;
+}
+
+
+
+
+
+
+/* to animate the span tags in centerText div */
+.centerText h1 span {
+    display: inline-block;
+    white-space: pre;
+}
+
+
+
+.card1[theme="black"]{
+    background-color: #000;
+    color: rgb(174, 222, 224);
+
+    transition: transform .8s ease;
+    transition: color .8s ease;
+    transition: width 8s ease;
+    transition: background .8s ease;
+}
+.card1[theme="cyan"]{
+    background-color: rgb(174, 222, 224);
+    color: #000;
+    transition: transform .8s ease;
+    transition: color .8s ease;
+    transition: width .8s ease;
+    transition: background .8s ease;
+}
+
+
+.card2[theme="black"]{
+    background-color: #000;
+    color: rgb(174, 222, 224);
+
+    transition: transform .8s ease;
+    transition: color .8s ease;
+    transition: width .8s ease;
+    transition: background .8s ease;
+}
+.card2[theme="cyan"]{
+    background-color: rgb(174, 222, 224);
+    color: #000;
+    transition: transform .8s ease;
+    transition: color .8s ease;
+    transition: width .8s ease;
+    transition: background .8s ease;
+}
+
+
+.card3[theme="black"]{
+    background-color: #000;
+    color: rgb(174, 222, 224);
+
+    transition: transform .8s ease;
+    transition: color .8s ease;
+    transition: width .8s ease;
+    transition: background .8s ease;
+}
+.card3[theme="cyan"]{
+    background-color: rgb(174, 222, 224);
+    color: #000;
+    transition: transform .8s ease;
+    transition: color .8s ease;
+    transition: width .8s ease;
+    transition: background .8s ease;
+}
+
+
+.card4[theme="black"]{
+    background-color: #000;
+    color: rgb(174, 222, 224);
+
+    transition: transform .8s ease;
+    transition: color .8s ease;
+    transition: width .8s ease;
+    transition: background .8s ease;
+}
+.card4[theme="cyan"]{
+    background-color: rgb(174, 222, 224);
+    color: #000;
+    transition: transform .8s ease;
+    transition: color .8s ease;
+    transition: width .8s ease;
+    transition: background .8s ease;
+}
+
+.listelem:hover .bluelayer {
+    opacity: 1;
+    height: 100%;
+    transition: height .4s ease , opacity .2s ease;
+}
+
+.listelem:hover .content {
+    color: white;
+    transition: color .3s ease;
+}
+
+.footer1 .textImageOnCircle{
+    animation: rotation 10s linear infinite;
+}
+
+@keyframes rotation {
+   from {
+        rotate: 0deg;
+    }
+   to{
+        rotate: 360deg;
+    }
+}
+
+.footer2 .hiddenMiddle .logo {
+    height: 1rem;
+    transform: translateY(110%);
+}
